@@ -87,5 +87,28 @@ def factorial(n:int):
   return fact 
 print(factorial(5)) """
 
+#keyword parameters
+"""def info(name,gender,age,address):
+    print(name)
+    print(gender)
+    print(age)
+    print(address)
+info(name = "mukesh",gender = "m",address = "bhopal",age = 52) """
 
+#check if a number is plaindrom or not using keyword agrument
+"""def palindrome(num):
+
+    copy = num
+    rev = 0
+    while num > 0:
+     last = num % 10
+     rev = rev *10 + last # rev * 10 means the next value will come after multiplication (like No. is 454 so 454% 10 = 4 so, 4 * 10 + 5(new n%10 after 454) = 45)
+    num = num  // 10
+    if copy == rev:
+     print(f"{copy} is a Palindorme Number")
+    else:
+     print(f"{copy} is not a Palindorme Number")
+palindrome(num =1221) """
  
+
+
